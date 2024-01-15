@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/mydatabase
+    username: root
+    password: password
+    driver-class-name: org.mariadb.jdbc.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+springdoc:
+  swagger-ui:
+    defaultModelsExpandDepth: 0
